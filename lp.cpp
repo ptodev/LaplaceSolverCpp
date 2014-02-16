@@ -54,7 +54,6 @@ Eigen::VectorXd& b, const Eigen::VectorXd& boundary)
     if(i==-1 || i==n) b(id) -= w * 0.0; // constrained coefficient
     else if(j==-1 || j==n) b(id) -= w * 0.0; // constrained coefficient
     else if( (pow(((-15.0+i*dx)-0.0),2) + pow(((-15.0+j*dx)-0.0),2) ) <= pow(3.0,2)) b(id) -= w*10.0;
-//    else if(j==30 && i==30) b(id) -= w*10.0;
     else coeffs.push_back(T(id,id1,w)); // unknown coefficient
 }
 
