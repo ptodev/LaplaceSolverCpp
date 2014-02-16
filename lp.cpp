@@ -15,7 +15,7 @@ int main(int argc, char** argv)
 {
     // start recording time
     std::clock_t begin = clock();
-    int n = 3000; // size of the image
+    int n = 300; // size of the image
     int m = n*n; // number of unknows (=number of pixels)
 
     // Assembly:
@@ -48,7 +48,7 @@ int main(int argc, char** argv)
 void insertCoefficient(int id, int i, int j, double w, std::vector<T>& coeffs,
 Eigen::VectorXd& b, const Eigen::VectorXd& boundary)
 {
-    double dx = 30.0/3000.0;
+    double dx = 30.0/300.0;
     int n = boundary.size();
     int id1 = i+j*n;
     if(i==-1 || i==n) b(id) -= w * 0.0; // constrained coefficient
@@ -66,7 +66,7 @@ void buildProblem(std::vector<T>& coefficients, Eigen::VectorXd& b, int n)
         for(int i=0; i<n; ++i)
         {
             int id = i+j*n;
-            double dx = 30.0/3000.0;
+            double dx = 30.0/300.0;
             if( (pow(((-15.0+i*dx)-0.0),2) + pow(((-15.0+j*dx)-0.0),2) ) <= pow(3.0,2))
             {
                 coefficients.push_back(T(id,id,1.0));
