@@ -1,6 +1,4 @@
-team4
+Group 4
 =====
 
-EM simulations
-
-test
+A program for solving the Laplace equation.
