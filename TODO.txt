@@ -1,6 +1,8 @@
 Things that need to be done:
 
 - Make sure that the circles don't overlap or got out of the rectangle.
+- Try to set the grid size dynamically
+- Text intput
 
 
 Suggestions:
