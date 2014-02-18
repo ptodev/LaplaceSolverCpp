@@ -12,9 +12,6 @@ void buildProblem(std::vector<T>& coefficients, Eigen::VectorXd& b,
                   Eigen::MatrixXf circles, Eigen::MatrixXi ic, Eigen::Vector4f bc_grid);
 void saveAsBitmap(const Eigen::VectorXd& x, Eigen::MatrixXi ic, const char* filename);
 
-// ADD ALIASING
-// CIRCLES SHOUDN'T OVERLAP
-
 int main()
 {
     // Construct the matrix with the initial conditions
