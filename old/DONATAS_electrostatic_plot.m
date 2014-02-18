@@ -1,4 +1,3 @@
-
 dt=0.001; %size of time step
 dx=0.005;%size of spatial step
 Nx = 1/dx;%number of points in x axis 
