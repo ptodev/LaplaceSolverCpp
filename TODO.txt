@@ -9,3 +9,4 @@ Suggestions:
 
 - Add a tab to the gui with a blurred image (looks higher quality).
 - Do a couple of really fast solutions first for preview.
+- The final program could be called with different arguments. For example lp -gui could open the gui.
