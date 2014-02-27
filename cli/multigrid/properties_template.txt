@@ -1,0 +1,13 @@
+-30 30 600
+-15 15 300
+0 0 0 0
+0 0 2 0
+10 0 5 20
+-20 0 2 10
+
+x_min x_max x_elements            // the range of x and the number of elements
+y_min y_max y_elements            // the range of y and the number of elements
+up down left right                // boundary conditions for the rectangle
+x_offset y_offset radius voltage  // boundary conditions for the circles
+                                  // (you can add as many as you like, as long
+                                  // as they don't overlap or go out of the rectangle)
