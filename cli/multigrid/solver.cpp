@@ -9,7 +9,8 @@ typedef Eigen::SparseMatrix<double> SpMat; // declares a column-major sparse mat
 typedef Eigen::Triplet<double> T;
 
 Eigen::MatrixXf fillMatricesFromFile(Eigen::MatrixXi& ic, Eigen::Vector4f& bc_grid, char* properties_file_name);
-void buildProblem(std::vector<T>& coefficients, Eigen::VectorXd& b, Eigen::MatrixXf circles, Eigen::MatrixXi ic, Eigen::Vector4f bc_grid);
+void buildProblem(std::vector<T>& coefficients, Eigen::VectorXd& b, 
+                  Eigen::MatrixXf circles, Eigen::MatrixXi ic, Eigen::Vector4f bc_grid);
 
 int main(int argc, char* argv[])
 {
