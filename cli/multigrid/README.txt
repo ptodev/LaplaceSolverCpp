@@ -1,5 +1,7 @@
 To install, compile solver.cpp:
 g++ solver.cpp -o solver
+In Linux, run with the command:
+$ ./run properties.txt data.txt
 
 If you run a linux VM, you need to install matplotlib:
 sudo apt-get install python-matplotlib
