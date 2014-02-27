@@ -14,5 +14,5 @@ plt.quiver(x, y, U, V)
 It doesn't plot the lines of the field, just the arrows.
 
 If you run windows, you can try installing Anaconda Python to run plot.py.
-The cpp file should compile with any compiler, but the bash probably won't work, and you need to call the probrams manually.
+The cpp file should compile with any compiler, but the bash probably won't work, and you need to call the programs manually.
 Alternatively, install a Linux VM from Vmware Player or VirtualBox.
