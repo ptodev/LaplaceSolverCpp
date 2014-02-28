@@ -92,7 +92,6 @@ int main(int argc, char* argv[])
 	 ******************************************************/
 	std::ofstream data_file;
 	// IFSTREAM accepts only a char, so firstly convert the string
-	// data_file.open( output_file_name.c_str() );
 	data_file.open( argv[2] );
 	data_file<<result;
 	data_file.close();
