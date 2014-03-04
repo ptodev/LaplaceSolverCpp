@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>Basic_set_Win/address.ico</file>
+        <file>Basic_set_Win/block.ico</file>
+        <file>Basic_set_Win/bookmark.ico</file>
+        <file>Basic_set_Win/briefcase.ico</file>
+        <file>Basic_set_Win/bubble.ico</file>
+        <file>Basic_set_Win/buy.ico</file>
+        <file>Basic_set_Win/calendar.ico</file>
+        <file>Basic_set_Win/clipboard.ico</file>
+        <file>Basic_set_Win/clock.ico</file>
+        <file>Basic_set_Win/delete.ico</file>
+        <file>Basic_set_Win/diagram.ico</file>
+        <file>Basic_set_Win/document.ico</file>
+        <file>Basic_set_Win/down.ico</file>
+        <file>Basic_set_Win/flag.ico</file>
+        <file>Basic_set_Win/folder.ico</file>
+        <file>Basic_set_Win/gear.ico</file>
+        <file>Basic_set_Win/globe.ico</file>
+        <file>Basic_set_Win/heart.ico</file>
+        <file>Basic_set_Win/help.ico</file>
+        <file>Basic_set_Win/home.ico</file>
+        <file>Basic_set_Win/info.ico</file>
+        <file>Basic_set_Win/key.ico</file>
+        <file>Basic_set_Win/label.ico</file>
+        <file>Basic_set_Win/left.ico</file>
+        <file>Basic_set_Win/letter.ico</file>
+        <file>Basic_set_Win/license.txt</file>
+        <file>Basic_set_Win/monitor.ico</file>
+        <file>Basic_set_Win/pencil.ico</file>
+        <file>Basic_set_Win/plus.ico</file>
+        <file>Basic_set_Win/present.ico</file>
+        <file>Basic_set_Win/print.ico</file>
+        <file>Basic_set_Win/right.ico</file>
+        <file>Basic_set_Win/save.ico</file>
+        <file>Basic_set_Win/search.ico</file>
+        <file>Basic_set_Win/shield.ico</file>
+        <file>Basic_set_Win/statistics.ico</file>
+        <file>Basic_set_Win/stop.ico</file>
+        <file>Basic_set_Win/tick.ico</file>
+        <file>Basic_set_Win/trash.ico</file>
+        <file>Basic_set_Win/up.ico</file>
+        <file>Basic_set_Win/user.ico</file>
+        <file>Basic_set_Win/wallet.ico</file>
+        <file>Basic_set_Win/warning.ico</file>
+    </qresource>
+</RCC>
