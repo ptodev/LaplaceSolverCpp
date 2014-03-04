@@ -91,7 +91,6 @@ int main(int argc, char* argv[])
 	 *************** Export matrix to file ****************
 	 ******************************************************/
 	std::ofstream data_file;
-	// IFSTREAM accepts only a char, so firstly convert the string
 	data_file.open( argv[2] );
 	data_file<<result;
 	data_file.close();
@@ -111,7 +110,6 @@ Eigen::MatrixXf fillMatricesFromFile(Eigen::MatrixXi& ic, Eigen::Vector4f& bc_gr
 	 ******************************************************/
 
 	// Open the file
-	// IFSTREAM accepts only a char, so firstly convert the string
 	std::ifstream properties_file( properties_file_name );
 	assert(properties_file.is_open());
 
