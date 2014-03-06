@@ -1,0 +1,99 @@
+%Group Talk 25/5/2014 Draft 1
+%Talk script
+\documentclass{article}
+\usepackage{times}
+\usepackage{amsmaths}
+\title{Group Talk Script}
+\author{Ciaran Cruise, Alexander Garrett}
+\date{\today}
+\begin{document}
+\maketitle
+
+
+
+INTRODUCTION
+[SLIDE 1 - Title Slide]\\
+Opening: 
+- Demonstration of the software, which emphasis on showings its capacity and modularity (getting people to chose values)
+
+WHAT DOES PROJECT THALES MEAN TO YOU? - THE NEED
+We take complex situations that can be modeled using the Laplace equation (this includes not only electrostatics, but fluid dynamics, and thermal emission)
+In an ideal world even a complex situation could be solved analytically, however sometimes its just not possible and if it is, even a deciptively simple
+looking situation can take up to 4 weeks (and used tissues) to solve - trust us, we know. So how can we sidestep this? 
+-----------------------
+[SLIDE 3 - The Task]
+How we did it:
+This is where Project Thales comes to the fore. We take your complex situation and reduce it something as simple, elegant the laplace equation itself.  
+Project THALES is software package that provides a fast, accurate and user friendly solution to situations which use the Laplace equation. It is based
+on a number of solid design principles: namely, MODULARITY/MODULAR DESIGN, INTUITIVE DESIGN and POWERFUL COMPONENT BASE - look to change- all of which 
+unite under the banner of an adaptable and versatile piece of software. \\
+------------------------
+[SLIDE 4 - Main Message]
+- slot for demonstration -- look, we did it\\
+Goals of the demonstration:
+RUN THE PROGRAM
+TAKE USER VALUES
+Model a given boundary condition situation
+Reinforce throughout the concept of user-definablity, the programs flexibility, ease of data communication/INPUT/OUTPUT - including export,
+and at no point is the underlying physics compromised nor the user, particularily, if the user is non computer literate. 
+-----------------------
+
+[SLIDE 5 - Review]
+CONTENTS
+- Discussion on the development cycle
+The importance of accuracy: solving the analytical solution
+The main purpose: solving situations numerically
+Putting pen to paper: creating the software package\\
+\begin{center}
+\textbf{MAIN BODY}\\
+\end{center}
+
+[SLIDE 6 - THE RUN DOWN]
+[SLIDE 7 - GRAPHIC OF ANALYTICAL SOLUTION]
+Solving the analytical solution:\\
+Central to benchmarking the accuracy of our ability to solve a given situation, was a comparison between an analyitcal situation with a numerical
+one calculated by the software. So you can see here, the situation which we solved analytically - the infite cylinder over a grounded plate. This
+was solved using a combination of Legandre polynomaials and an augmented method of images - for further details on this, see our published 
+group report, rest assured it is a deciptively difficult peice of mathematics. Comparison between analytical and numerical [see here in future 
+for specifics].
+[SLIDE 8 - THE NUMERICAL SOLUTION]
+[SLIDE 9 - GRAPHIC OF ENGINE TESTING]
+The Numerical:\\
+Our capacity to solve situations numerically is the corner stone of our program; if this fails then so does our entire program - its very fortunate then
+that Project THALES has a robust and stable backbone. You can see also that we have direct comparison with other exisiting finite difference engines,
+notably the method succesive over relaxation by our very own, Mr A.M. Q. DeGarrett. [Being that SOR is (hopefully marginally) faster, yet less 
+sophsticated we can directly show you why we have an edge over competeing products.] Furthermore we one again emphesise the modular component of the 
+engine and hence the project as a whole. Just as we have reduced the complexity of electrostatic problems to simple, detailed outputs of the
+underlying physics , we can also do similarly for fluid dynamics, thermal emissons, any laplace situation, by simply changing a few lines of code
+and a few constants.
+
+[SLIDE 10 - THE SOFTWARE LAYOUT AND PACKAGE]
+[SLIDE 11 - GRAPHICS OF THE UI]
+One of the major considerations of project THALES is who its target audience is, and, at first it may seem completely obvious: of course, its
+undergraduates, postgraduates and those in industry - however, we feel that project THALES also has a great potential to be used by.\
+We felt that considering we had this powerful,   
+
+
+\begin{center}
+\textbf{CONCLUSION}\\
+\end{center}
+
+
+[SLIDE 7 - 2ND REVIEW -RRR-]
+[SLIDE 8 - CONCLUSION]
+Include what the future of the project may entail.
+[SLIDE 9 - END TITLE PAGE]
+-----------------
+[SLIDE 10 - DOCUMENTATION LINKS]
+[SLIDE 11 - FAQ]
+
+\end{document}
+
+%HIDDEN SECTIONS
+%As you have seen from this demonstration, the  principles which we mentioned before, - RRR - , are immeadiately visible when using the program, 
+%however let us run through, in more detail, what we mean:
+%Powerful Component base: The engine\\
+%The engine is a finite difference engine, however, it is a rather sophisticated one, termed a a multigrid method. Multigird methods have significant 
+%advantages in terms of speed, accuaracy and programming complexity over other finite differencing methods. Given then teams significant background in 
+%differencing engines, to attempt something new and bold , seemed a logical progression. 
+%Modularity: 
