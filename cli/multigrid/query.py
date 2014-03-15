@@ -1,3 +1,15 @@
+# Example how to use the script:
+# $ python query.py 
+# X sould be between 0.0 and 600.0!
+# Y sould be between 0.0 and 560.0!
+# Type x and y coordinates (ie. 300,100):
+# 300,300
+# V(300,300) = 4.27943 Volts
+# E(300,300) = 0.0338800014758 N/C
+# Type x and y coordinates (ie. 300,100):
+# q
+
+
 import numpy as np
 import sys
 
