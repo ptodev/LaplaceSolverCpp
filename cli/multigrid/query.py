@@ -44,16 +44,16 @@ while (True):
 	if (coord == 'q'):
 		break;
 	coord = coord.split(",")
-	x_query = int(coord[0])
-	y_query = int(coord[1])
+	x_query = float(coord[0])
+	y_query = float(coord[1])
 	if (x_min > x_query or x_max < x_query):
 		print "X sould be between "+str(x_min)+" and "+str(x_max)+"!"
 		continue;
 	if (y_min > y_query or y_max < y_query):
 		print "Y sould be between "+str(y_min)+" and "+str(y_max)+"!"
 		continue;
-	x_index = (x_query-x_min)/dx
-	y_index = (y_query-y_min)/dy
+	x_index = int(round((x_query-x_min)/dx))
+	y_index = int(round((y_query-y_min)/dy))
 
 	print "V("+str(x_query)+","+str(y_query)+") = "+str(D[y_index,x_index])+" Volts"
 	print "E("+str(x_query)+","+str(y_query)+") = "+str(E[y_index,x_index])+" N/C"
