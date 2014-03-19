@@ -23,8 +23,8 @@ int main(int argc, char* argv[])
 		std::cout<<"./solve input_file.txt output_file.txt"<<std::endl;
 		return 1;
 	}
-	std::cout<<"input file: "<<argv[1]<<std::endl;
-	std::cout<<"output file: "<<argv[2]<<std::endl;
+
+	std::cout<<"####### RUNNING MULTIGRID #########"<<std::endl;
 
 	/******************************************************
 	 ***** READ THE DATA FROM THE PROPERTIES.TXT FILE *****
@@ -32,17 +32,6 @@ int main(int argc, char* argv[])
 	Eigen::MatrixXi ic(3,2);
 	Eigen::Vector4f bc_grid;
 	Eigen::MatrixXf bc_internal = fillMatricesFromFile(ic, bc_grid, argv[1]);
-
-	/******************************************************
-	 ************* OUTPUT INITIAL CONDITIONS **************
-	 ******************************************************/
-	std::cout<<"Grid properties: "<<std::endl;
-	std::cout<<"x ["<<ic(1,0)<<", "<<ic(1,1)<<"], Elements: "<<ic(0,0);
-	std::cout<<"y ["<<ic(2,0)<<", "<<ic(2,1)<<"], Elements: "<<ic(0,1);
-	std::cout<<"Box boundary conditions: "<<std::endl;
-	std::cout<<bc_grid<<std::endl;
-	std::cout<<"Circular boundary conditions: "<<std::endl;
-	std::cout<<bc_internal<<std::endl;
 
 	/******************************************************
 	 **************** START RECORDING TIME ****************
@@ -55,7 +44,7 @@ int main(int argc, char* argv[])
 	std::vector<T> coefficients; // list of non-zeros coefficients
 	Eigen::VectorXd b(ic(0,0)*ic(0,1)); // the right hand side-vector resulting from the constraints
 	buildProblem(coefficients, b, bc_internal, ic, bc_grid);
-	std::cout<<"The problem has been built."<<std::endl;
+	std::cout<<"THE PROBLEM HAS BEEN BUILT!"<<std::endl;
 
 	/******************************************************
 	 ************ CONSTRUCT THE SPARSE MATRIX *************
@@ -68,6 +57,7 @@ int main(int argc, char* argv[])
 	// Solving
 	Eigen::SimplicialCholesky<SpMat> chol(A); // performs a Cholesky factorization of A
 	Eigen::VectorXd x = chol.solve(b); // use the factorization to solve for the given right hand side
+	std::cout<<"THE MATRIX HAS BEEN SOLVED!"<<std::endl;
 
 	/******************************************************
 	 ***************** END RECORDING TIME *****************
@@ -98,6 +88,8 @@ int main(int argc, char* argv[])
 	data_file.open( argv[2] );
 	data_file<<result;
 	data_file.close();
+
+	std::cout<<"######## MULTIGRID ENDED ##########"<<std::endl;
 
 	return 0;
 }

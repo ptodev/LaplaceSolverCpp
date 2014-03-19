@@ -1,8 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
 
-D = np.loadtxt("data.txt")
-P = np.loadtxt("properties.txt")
+D = np.loadtxt(sys.argv[2])
+P = np.loadtxt(sys.argv[1])
 
 grad = np.gradient(D)
 U = -1*grad[1]

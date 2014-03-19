@@ -13,8 +13,11 @@
 import numpy as np
 import sys
 
-D = np.loadtxt("data.txt")
-P = np.loadtxt("properties.txt")
+print ""
+print "######## DATAFILE QUERIES #########"
+
+D = np.loadtxt(sys.argv[2])
+P = np.loadtxt(sys.argv[1])
 
 grad = np.gradient(D)
 U = -1*grad[1]
@@ -35,8 +38,9 @@ y_res = P[1][2]
 dx = (x_max-x_min)/x_res
 dy = (y_max-y_min)/y_res
 
-print "X sould be between "+str(x_min)+" and "+str(x_max)+"!"
-print "Y sould be between "+str(y_min)+" and "+str(y_max)+"!"
+print "X should be between "+str(x_min)+" and "+str(x_max)+"!"
+print "Y should be between "+str(y_min)+" and "+str(y_max)+"!"
+print ""
 
 while (True):
 	print "Type x and y coordinates (ie. 300,100, or q for exit!):"
@@ -57,3 +61,7 @@ while (True):
 
 	print "V("+str(x_query)+","+str(y_query)+") = "+str(D[y_index,x_index])+" Volts"
 	print "E("+str(x_query)+","+str(y_query)+") = "+str(E[y_index,x_index])+" N/C"
+	print ""
+
+print "########## QUERIES ENDED ##########"
+print ""
